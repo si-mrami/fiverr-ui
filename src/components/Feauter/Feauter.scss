@@ -1,0 +1,39 @@
+.featuer {
+    width: 100%;
+    background-color: rgb(138, 168, 158);
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .left {
+
+        h1 {
+            color: #2a2929;
+        }
+        .item {
+            padding: 2rem;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+
+            h2 {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                gap: 10px;
+                font-weight: 400;
+                font-size: 20px;
+
+                .icon {
+                    color: #808080;
+                }
+            }
+            span {
+                margin-left: 1.5rem;
+                color: #cfc9c9;
+                font-size: 15px;
+            }
+        }
+    }
+}

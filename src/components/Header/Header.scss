@@ -1,0 +1,113 @@
+.header {
+    background-color: #125012;
+    color: #fff;
+    height: 32rem;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .left {
+            display: flex;
+            margin-top: 9rem;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-direction: column;
+
+            .tetle {
+
+                h1 {
+
+                    font-size: 44px;
+
+                    span {
+                        font-family: cursive;
+                    }
+                }
+            }
+            .search {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 1px solid lightgray;
+                width: 100%;
+                background-color: #fff;
+                // padding: 0.5rem;
+                border-radius: 5px;
+                height: 2.5rem;
+
+                .search-content {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-left: 0.5rem;
+                input {
+                    width: 100%;
+                    border: none;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .btn-search {
+                    display: flex;
+                    border: none;
+                    height: 2.5rem;
+                    width: 5.5rem;
+                    cursor: pointer;
+                    background-color: #2fa439;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        .list_btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+
+            button {
+                background-color: transparent;
+                border: 1px solid lightgray;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 15px;
+                padding: 0.5rem;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #fff;
+                }
+            }
+        }
+        }
+
+        .right {
+            margin-top: 3rem;
+
+            img {
+               height: 27rem;
+               object-fit: cover;
+            }
+        }
+    }
+    .menu {
+        background-color: #c8c5c5;
+        color: #808080;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+
+        span {
+            font-size: 30px;
+            font-weight: 700;
+        }
+    }
+}
