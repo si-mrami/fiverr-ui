@@ -6,6 +6,7 @@ import Slide from "./components/Slider/Slider";
 import { cards } from "./Data";
 import Cart from "./components/Cart/Cart";
 import Feauter from "./components/Feauter/Feauter";
+import Ofers from "./components/Ofers/Ofers";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         ))}
       </Slide>
       <Feauter/>
+      <Ofers/>
     </div>
   );
 }

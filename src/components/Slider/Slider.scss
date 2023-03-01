@@ -1,13 +1,27 @@
+@import"../media-query";
+
 .slider {
     display: flex;
     justify-content: center;
-    padding: 120px 0px;
+    align-items: center;
+    padding: 5rem 0px;
+
+
+
     .container {
         width: 1690px;
+
+        @include phone {
+            width: 252px;
+        }
 
         h1 {
             font-weight: 500;
             margin-bottom: 3rem;
+
+            @include phone {
+                text-align: center;
+            }
         }
         .carousel-prev, .carousel-next {
             width: 50px;

@@ -1,3 +1,5 @@
+@import"../media-query";
+
 .navbar {
     display: flex;
     flex-direction: column;
@@ -5,8 +7,15 @@
     background-color: #125012;
     color: #fff;
     transition: 0.5s all ease;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
+    z-index: 99;
+
+    @include phone {
+        background-color: #fff;
+        color: #111; 
+    }
 
     &.active {
         background-color: #fff;
@@ -18,10 +27,43 @@
         display: flex;
         justify-content: space-between;
         padding: 20px 0;
+
+        @include phone {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0;
+        }
+
+        .menu {
+            display: none;
+
+            @include phone {
+                display: flex;
+                width: 2rem;
+            }
+        }
+
+        .jion {
+            display: none;
+
+            @include phone {
+                display: flex;
+                margin-right: 1.5rem;
+            }
+        }
+
         .logo {
             font-size: 34px;
             font-weight: bold;
             cursor: pointer;
+
+            @include phone {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
             .text {
 
             }
@@ -35,6 +77,10 @@
             align-items: center;
             font-weight: 500;
             font-family: 'Montserrat', sans-serif;
+
+            @include phone {
+                display: none;
+            }
             span {
                 cursor: pointer;
             }
@@ -49,6 +95,9 @@
                 &:hover {
                     background-color: #1dbf73;
                     border-color: #1dbf73;  
+                }
+                &.active {
+                    background-color: #1dbf73;
                 }
             }
         }
@@ -65,5 +114,9 @@
         justify-content: space-between;
         font-weight: 300;
         color: #808080;
+
+        @include phone {
+            display: none;
+        }
     }
 }

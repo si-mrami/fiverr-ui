@@ -1,7 +1,7 @@
 import React from "react";
 import "./Feauter.scss";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
-
+import vid from "../../assets/Screen Recording 2023-03-01 at 12.25.14 AM.mp4"
 const Feauter = () => {
   return (
     <div className="featuer">
@@ -48,7 +48,19 @@ const Feauter = () => {
           </span>
         </div>
       </div>
-      <div className="right">right</div>
+      <div className="right">
+        <video
+          id="my-video"
+          className="video-js"
+          controls
+          preload="auto"
+          poster="MY_VIDEO_POSTER.jpg"
+          data-setup="{}"
+        >
+          <source src={vid} type="video/mp4" />
+          <source src="MY_VIDEO.webm" type="video/webm" />
+        </video>
+      </div>
     </div>
   );
 };
