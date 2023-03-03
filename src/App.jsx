@@ -7,6 +7,8 @@ import { cards } from "./Data";
 import Cart from "./components/Cart/Cart";
 import Feauter from "./components/Feauter/Feauter";
 import Ofers from "./components/Ofers/Ofers";
+import Business from "./components/business/Business";
+import Review from "./components/Reveiw/Review";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       </Slide>
       <Feauter/>
       <Ofers/>
+      <Business/>
+      <Review/>
     </div>
   );
 }

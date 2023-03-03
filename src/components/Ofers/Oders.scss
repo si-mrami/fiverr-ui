@@ -2,8 +2,53 @@
 
 .ofer {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     gap: 20px;
+    padding: 4rem;
+    margin-left: 4rem;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 30px;
+        grid-auto-rows: minmax(100px, auto);
+
+        @include phone {
+            display: grid;
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-columns: minmax(100px, auto);
+            gap: 30px;
+            justify-items: center;
+        }
+
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-direction: column;
+            cursor: pointer;
+            transition: all 0.2s ease;
+
+            &:hover {
+
+                hr {
+                    width: 5rem;
+                    border-color: #088000;
+                }
+            }
+
+            img {
+                width: 2rem;
+            }
+            hr {
+                width: 3rem;
+                border: 1px solid lightgray;
+            }
+            span {
+                font-size: 17px;
+                font-weight: 300;
+            }
+        }
+    }
 }
